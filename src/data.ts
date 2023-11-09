@@ -1,4 +1,4 @@
-export const menuItems = [
+export const menuItems: MenuItem[] = [
   {
     id: 1,
     title: "Cheese Pizza",
@@ -44,3 +44,10 @@ export const menuItems = [
     category: "dessert",
   },
 ];
+export type MenuItem = {
+  id: number;
+  title: string;
+  description: string;
+  imgUrl: string;
+  category: string;
+};
